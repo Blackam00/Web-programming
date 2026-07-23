@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="th">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>สารบัญและแบบทดสอบ HTML5 Semantic Tags - บทที่ 3</title>
+        <style>
+            body {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                line-height: 1.6;
+                background-color: #f8f9fa;
+                color: #333;
+                margin: 0;
+                padding: 20px;
+            }
+            header {
+                background-color: #0056b3;
+                color: white;
+                text-align: center;
+                padding: 20px 0;
+                border-radius: 8px 8px 0 0;
+            }
+            header h1 {
+                margin: 0;
+                font-size: 28px;
+            }
+            header p {
+                margin: 5px 0 0 0;
+                opacity: 0.9;
+            }
+            main {
+                background: white;
+                padding: 25px;
+                border-radius: 0 0 8px 8px;
+                box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            }
+            .intro {
+                background-color: #e9ecef;
+                padding: 15px;
+                border-left: 5px solid #0056b3;
+                margin-bottom: 25px;
+                border-radius: 4px;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 15px;
+            }
+            th, td {
+                padding: 12px 15px;
+                border: 1px solid #dee2e6;
+                text-align: left;
+            }
+            th {
+                background-color: #f1f3f5;
+                color: #495057;
+                font-weight: bold;
+            }
+            tr:nth-child(even) {
+                background-color: #f8f9fa;
+            }
+            tr:hover {
+                background-color: #e2e6ea;
+            }
+            a.btn-link {
+                display: inline-block;
+                background-color: #28a745;
+                color: white;
+                padding: 6px 12px;
+                text-decoration: none;
+                border-radius: 4px;
+                font-size: 14px;
+                transition: background-color 0.2s;
+            }
+            a.btn-link:hover {
+                background-color: #218838;
+            }
+            footer {
+                text-align: center;
+                margin-top: 30px;
+                padding: 15px;
+                color: #6c757d;
+                font-size: 14px;
+            }
+        </style>
+    </head>
+    <body>
+
+        <header>
+            <h1>HTML5 Semantic Tags Lesson</h1>
+            <p>รวมตัวอย่างการใช้งาน Semantic Tags ใน HTML5 (บทที่ 3)</p>
+        </header>
+
+        <main>
+            <div class="intro">
+                <h2>ยินดีต้อนรับสู่โปรเจกต์การเรียนรู้ HTML5</h2>
+                <p>หน้าเว็บนี้ทำหน้าที่เป็น <strong>Index (ศูนย์กลางเชื่อมโยง)</strong> สำหรับเข้าถึงตัวอย่างโค้ด HTML5 Semantic Tags แต่ละหัวข้อที่สร้างไว้ในโปรเจกต์ NetBeans เพื่อให้ง่ายต่อการทดสอบและตรวจทานผลการรันโปรแกรม</p>
+            </div>
+
+            <h3>รายการตัวอย่างโปรแกรมและลิงก์เชื่อมโยง</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ลำดับ</th>
+                        <th>ชื่อไฟล์ (Filename)</th>
+                        <th>แท็กที่ใช้ (Semantic Tags)</th>
+                        <th>คำอธิบายหน้าที่และการทำงาน</th>
+                        <th>การเข้าถึง</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td><code>example1_section.html</code></td>
+                        <td><code>&lt;section&gt;</code></td>
+                        <td>แบ่งส่วนเนื้อหาเอกสารออกเป็นหมวดหมู่ตามหัวข้อ พร้อมกำหนดสีพื้นหลังเพื่อแยกส่วนชัดเจน</td>
+                        <td><a href="example1_section.html" class="btn-link" target="_blank">เปิดดูผลรัน</a></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td><code>example2_article.html</code></td>
+                        <td><code>&lt;article&gt;</code></td>
+                        <td>แสดงเนื้อหาบทความที่เป็นอิสระ สามารถนำไปใช้ซ้ำหรือแสดงผลเดี่ยวๆ ได้</td>
+                        <td><a href="example2_article.html" class="btn-link" target="_blank">เปิดดูผลรัน</a></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td><code>example3_section_article.html</code></td>
+                        <td><code>&lt;section&gt;</code>, <code>&lt;article&gt;</code></td>
+                        <td>บูรณาการโดยใช้ <code>&lt;section&gt;</code> ครอบบทความ <code>&lt;article&gt;</code> หลายๆ ตัวอย่างเข้าด้วยกัน</td>
+                        <td><a href="example3_section_article.html" class="btn-link" target="_blank">เปิดดูผลรัน</a></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td><code>example4_article_section.html</code></td>
+                        <td><code>&lt;article&gt;</code>, <code>&lt;section&gt;</code></td>
+                        <td>บูรณาการโดยใช้บทความหลัก <code>&lt;article&gt;</code> ครอบย่อยเป็นส่วนๆ ด้วย <code>&lt;section&gt;</code></td>
+                        <td><a href="example4_article_section.html" class="btn-link" target="_blank">เปิดดูผลรัน</a></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td><code>example5_header_footer.html</code></td>
+                        <td><code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code></td>
+                        <td>สร้างส่วนหัวของเว็บไซต์ (ชื่อเว็บ/เมนู) และส่วนท้ายเว็บไซต์ (ลิขสิทธิ์/ช่องทางติดต่อ)</td>
+                        <td><a href="example5_header_footer.html" class="btn-link" target="_blank">เปิดดูผลรัน</a></td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td><code>example6_nav.html</code></td>
+                        <td><code>&lt;nav&gt;</code></td>
+                        <td>กำหนดแถบนำทาง (Navigation Menu) เพื่อเชื่อมโยงไปยังส่วนต่างๆ ของเว็บไซต์</td>
+                        <td><a href="example6_nav.html" class="btn-link" target="_blank">เปิดดูผลรัน</a></td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td><code>example7_aside.html</code></td>
+                        <td><code>&lt;aside&gt;</code></td>
+                        <td>จัดวางเนื้อหาข้างเคียงหรือเนื้อหาเสริม (Sidebar) เช่น ลิงก์บทความที่เกี่ยวข้อง</td>
+                        <td><a href="example7_aside.html" class="btn-link" target="_blank">เปิดดูผลรัน</a></td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td><code>example8_figure.html</code></td>
+                        <td><code>&lt;figure&gt;</code>, <code>&lt;figcaption&gt;</code></td>
+                        <td>แสดงสื่อประกอบ (รูปภาพ/แผนภูมิ) พร้อมระบุข้อความคำบรรยายภาพประกอบ</td>
+                        <td><a href="example8_figure.html" class="btn-link" target="_blank">เปิดดูผลรัน</a></td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td><code>example9_main.html</code></td>
+                        <td><code>&lt;main&gt;</code></td>
+                        <td>กำหนดขอบเขตของเนื้อหาหลัก (Main Content) ประจำหน้าเว็บ ไม่ให้ซ้ำกับ Header/Footer</td>
+                        <td><a href="example9_main.html" class="btn-link" target="_blank">เปิดดูผลรัน</a></td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td><code>example10_mark.html</code></td>
+                        <td><code>&lt;mark&gt;</code></td>
+                        <td>เน้นแถบสี (Highlight) บนข้อความหรือคำสำคัญที่ต้องการให้โดดเด่น</td>
+                        <td><a href="example10_mark.html" class="btn-link" target="_blank">เปิดดูผลรัน</a></td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td><code>example11_summary.html</code></td>
+                        <td><code>&lt;details&gt;</code>, <code>&lt;summary&gt;</code></td>
+                        <td>สร้างเนื้อหาแบบพับเก็บและขยายได้ (Collapsible Content) เหมาะสำหรับทำ FAQ</td>
+                        <td><a href="example11_summary.html" class="btn-link" target="_blank">เปิดดูผลรัน</a></td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td><code>example12_time.html</code></td>
+                        <td><code>&lt;time&gt;</code></td>
+                        <td>ระบุข้อมูลวันที่และเวลาในรูปแบบ ISO 8601 ให้โครงสร้างเว็บอ่านข้อมูลเวลาได้ถูกต้อง</td>
+                        <td><a href="example12_time.html" class="btn-link" target="_blank">เปิดดูผลรัน</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+
+        <footer>
+            <p>&copy; HTML5 Semantic Tags Learning Project | พัฒนาด้วย NetBeans</p>
+        </footer>
+
+    </body>
+</html>
